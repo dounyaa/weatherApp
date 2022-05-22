@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+.title h1{
+  background-image: linear-gradient(0deg, #cde498, #39ca6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.title h1{
+  font-family: 'Rubik', sans-serif;
+  font-size: xx-large;
+  font-weight: normal;
+  font-size: 5em;
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+.body{
+  background-color: #134601;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 20%;
+}
+.content{
+
+}
+.search {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+  }
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px;
+  }
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #134601;
+  }
+::placeholder {
+    color: #134601;
+  }
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+.search-bar button i{
+    font-size: 40px;
+    background-color: transparent;
+  }
+.fa-search:before{
+    color: #134601;
+}
+.meteo{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.meteo .day{
+  display: inline-grid;
+  width: 25vw;
+}
+.meteo .day .return button{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #134601;
+}
+.meteo .day .return button i{
+  font-size: 25px;
+  color: white;
+}
+.meteo .day .today{
+  height: 40vh;
+  background: #134601;
+  border-radius: 10%;
+  opacity: 0.9;
+  width: 32vw;
+}
+.meteo .day .today .today-header{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.meteo .day .today .today-header img{
+  width: 30%;
+}
+.meteo .day .today .today-header h2{
+  color: #fafeff;
+  font-family: 'Poppins', sans-serif;
+
+}
+.meteo .day .today .today-details ul{
+  list-style: none;
+}
+.meteo .day .today .today-details ul li{
+  color: #fafeff;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+}
+.meteo .days ul{
+  list-style: none;
+}
+.meteo .days ul li{
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  background: #134601;
+  border-radius: 10%;
+  opacity: 0.9;
+  gap: 3vw;
+  margin-bottom: 5%;
+}
+.meteo .days ul li .day-logo img{
+  width: 50%;
+}
+.meteo .days ul li .day-details{
+
+}
+.meteo .days ul li .day-details h3{
+  color: #fafeff;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  margin-bottom: -10px;
+}
+.meteo .days ul li .day-details p{
+  color: #fafeff;
+  font-size: small;
+}
+.meteo .days ul li .degree h1{
+  color: #fafeff;
+  font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 640px) {
+  .meteo {
+    flex-direction: column;
+  }
+  .meteo .day{
+    width: 80vw;
+  }
+  .meteo .day .today{
+    margin: 30px 30px 10px 35px;
+  }
+  .meteo .days ul{
+  padding: 15px 30px 0px 35px;
+  margin: 0;
+  }
+}
